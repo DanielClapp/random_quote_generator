@@ -18,10 +18,6 @@ body {
   justify-content: center;
 }
 
-span {
-  font-family: Poppins, sans-seriff;
-}
-
 .quote-container {
   width: auto;
   max-width: 900px;
@@ -92,11 +88,15 @@ button:active {
     margin: auto 15px;
   }
 
-  #quote {
+  .quote-text {
     font-size: 2.5rem;
   }
 
-  #author {
+  .quote-author {
+    font-size: 1.5rem;
+  }
+
+  .long-quote {
     font-size: 1.5rem;
   }
 }
