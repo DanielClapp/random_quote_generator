@@ -61,8 +61,22 @@ function tweetQuote() {
   window.open(twitterUrl, '_blank');
 }
 
+//Random Color Generator
+const randomColor = () => {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
+
+newQuoteBtn.addEventListener('click', function (e) {
+  const newColor = randomColor();
+  document.body.style.backgroundColor = newColor;
+});
+
 TwitterBtn.addEventListener('click', tweetQuote);
 
 // On Load
